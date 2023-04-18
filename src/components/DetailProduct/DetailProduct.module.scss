@@ -1,0 +1,81 @@
+.detailProduct {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+  img {
+  
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .product {
+    background-color: rgb(233, 245, 245);
+
+    border-radius: 10px;
+    margin: 1rem;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(247, 8, 227, 0.46);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(247, 8, 227, 0.46);
+    box-shadow: 0px 0px 6px 0px rgba(247, 8, 227, 0.46);
+    // background-color: rgba(233, 234, 234, 0.344);
+    .title {
+      padding: 10px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .description {
+      background-color: white;
+
+      padding: 10px;
+    }
+    a {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .relate {
+    padding: 20px;
+    p {
+      margin-top: 50px;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.list {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+
+  &__product {
+    position: relative;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+
+    .name {
+      padding: 10px;
+      text-align: center;
+    }
+    img {
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px;
+      height: 30vh;
+    object-fit: contain;
+      object-position: center center;
+    }
+
+    h5 {
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    h6 {
+      font-size: 15px;
+      line-height: 2;
+    }
+  }
+}

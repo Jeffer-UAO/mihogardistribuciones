@@ -1,0 +1,30 @@
+.btnWhatsapp {
+    display: flex;
+    position: fixed;
+    bottom: -2px;
+  
+    justify-content: center;
+  
+    .paneluser {
+      display: flex;
+      background-color: rgb(28, 166, 207);
+      padding: 10px;
+      width: 100vw;
+      justify-content: center;
+    }
+    .icon {
+      display: flex;
+      flex-direction: column;
+      margin-left: 2.5vh;
+      margin-right: 2.5vh;
+      align-items: center;
+  
+      color: rgb(255, 255, 255);
+    }
+    p {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: rgb(255, 255, 255);
+    }
+  }
+  
