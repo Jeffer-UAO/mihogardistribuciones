@@ -6,42 +6,38 @@ import { MdOutlineCategory } from "react-icons/md";
 import { MdOutlineLocalOffer } from "react-icons/md";
 import { CiUser } from "react-icons/ci";
 import Link from "next/link";
+import { useState } from "react";
+import { Spinner } from "reactstrap";
+import { BtnLink } from "../Common";
 
 export function FooterApp() {
+  const [isLoading, setIsLoading] = useState(false);
   return (
     <div className={styles.btnWhatsapp}>
       <div className={styles.paneluser}>
-        <Link href="/">
-          <div className={styles.icon}>
-            <AiOutlineHome size={30} />
-            <p>home</p>
-          </div>
-        </Link>
-        <Link href="/featured">
-          <div className={styles.icon}>
-            <MdOutlineCategory size={30} />
-            <p>Exclusivo</p>
-          </div>
-        </Link>
+        <BtnLink link={"/"} title={"HOME"} logo={<AiOutlineHome size={20} />} />
+        <BtnLink
+          link={"/featured"}
+          title={"EXCLUSIVO"}
+          logo={<MdOutlineCategory size={20} />}
+        />
 
         <WhatsApp
           phoneNumber="+573156665224"
           message="Hola, me gustaría obtener más información sobre sus productos."
         />
-
-        <Link href="/ofert">
-          <div className={styles.icon}>
-            <MdOutlineLocalOffer size={30} />
-            <p>Ofertas</p>
-          </div>
-        </Link>
-
-        <Link href="/join/sing-in">
-          <div className={styles.icon}>
-            <CiUser size={30} />
-            <p>cuenta</p>
-          </div>
-        </Link>
+        <BtnLink
+          link={"/ofert"}
+          title={"OFERTAS"}
+          logo={<MdOutlineLocalOffer size={20} />}
+        />
+        <BtnLink
+          link={
+            "https://mihogardistribuciones.catalogointeractivo.com.co/admin-dashboard/"
+          }
+          title={"ADMIN"}
+          logo={<CiUser size={20} />}
+        />
       </div>
     </div>
   );
