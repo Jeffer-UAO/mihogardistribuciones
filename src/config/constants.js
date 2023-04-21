@@ -1,6 +1,6 @@
 // export const BASE_API = `http://mihogardistribuciones.catalogointeractivo.com.co:9000`
 
-export const BASE_API = `https://surtipapeleriala15.catalogointeractivo.com.co`;
+export const BASE_API = `https://mihogardistribuciones.catalogointeractivo.com.co`;
 
 export const SEARCH_HISTORY = "search-history";
 export const TOKEN = "token";
