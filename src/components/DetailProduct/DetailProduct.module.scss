@@ -10,10 +10,6 @@
   }
 
   .product {
-    background-color: rgb(233, 245, 245);
-
-    border-radius: 10px;
-    margin: 1rem;
     -webkit-box-shadow: 0px 0px 6px 0px rgba(247, 8, 227, 0.46);
     -moz-box-shadow: 0px 0px 6px 0px rgba(247, 8, 227, 0.46);
     box-shadow: 0px 0px 6px 0px rgba(247, 8, 227, 0.46);
@@ -35,7 +31,7 @@
   }
 
   .relate {
-    padding: 20px;
+    padding: 10px;
     p {
       margin-top: 50px;
       font-size: 1.2rem;
@@ -45,7 +41,7 @@
 
 .list {
   display: grid;
-  gap: 10px;
+  gap: 0.5rem;
   grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
 
   &__product {
@@ -56,13 +52,13 @@
     border-radius: 5px;
 
     .name {
-      padding: 10px;
+      padding: 5px;
       text-align: center;
     }
     img {
       border-top-right-radius: 3px;
       border-top-left-radius: 3px;
-      height: 30vh;
+     
     object-fit: contain;
       object-position: center center;
     }
