@@ -10,7 +10,7 @@ export async function getServerSideProps(context) {
   const { query, params } = context;
   const { category } = params;
 
-
+console.log(category);
 
   const categoryCtrl = new Categories();
   const responseCategory = await categoryCtrl.getBySlug(category)
