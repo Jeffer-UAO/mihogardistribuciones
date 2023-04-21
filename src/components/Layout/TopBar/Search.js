@@ -5,6 +5,7 @@ import { BASE_NAME } from "@/config/constants";
 
 import styles from "./TopBar.module.scss";
 import Link from "next/link";
+import { FooterApp } from "@/components/FooterApp";
 
 export function Search(props) {
   const { products } = props;
@@ -40,6 +41,8 @@ export function Search(props) {
           </div>
         ))}
       </div>
+
+      <FooterApp />
     </>
   );
 }
