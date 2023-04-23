@@ -52,9 +52,9 @@ export function Footer() {
       </div>    
       <div>
         <p className={styles.copyright}>
-          MI HOGAR DISTRIBUCIONES Copyright © 2023. Todos los derechos reservados |
-          Desarrollado por: <br/>
-          Jeffer Quiñones
+          MI HOGAR DISTRIBUCIONES Copyright © 2023. Todos los derechos reservados <br/>
+          Desarrollado por: Jeffer Quiñones <br/>
+          Versión 2.6.1
         </p>
       </div>
     </div>
