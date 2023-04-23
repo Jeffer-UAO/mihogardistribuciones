@@ -15,17 +15,16 @@ export function DetailProduct(props) {
     setProductData(product[0]);
   }, []);
 
-  const changeDetail = (data) => {
-    setProductData(data);
+  const changeDetail = (data) => {  
+    setProductData(data);    
+    window.scrollTo(0, 0);
   };
 
   if (product) {
     return (
-      <div className={styles.detailProduct}>
-        <div className={styles.product}>
-          <CardTitle className={styles.title}>
-            <h5>{productData.name_extend}</h5>
-          </CardTitle>
+      <div className={styles.detailProduct} >
+        <div className={styles.product} id="seccion-1">
+          
           <CardImg alt="Card image cap" src={BASE_NAME + productData.images} />
 
           <div className={styles.description}>
@@ -58,7 +57,7 @@ export function DetailProduct(props) {
             {map(relate, (product, index) => (
               <div
                 key={index}
-                className={styles.list__product}
+                className={styles.list__product2}
                 onClick={() => changeDetail(product)}
               >
                 <CardImg
@@ -71,7 +70,7 @@ export function DetailProduct(props) {
                     <h5>
                       {product.name} {product.name_extend}
                     </h5>
-                    {productData.price1 !== null && <h6>$ {product.price1}</h6>}
+                    {product.price1 !== null && <h6>$ {product.price1}</h6>}
                   </CardTitle>
                 </div>
               </div>

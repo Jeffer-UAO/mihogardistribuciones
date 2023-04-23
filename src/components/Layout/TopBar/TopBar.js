@@ -70,6 +70,11 @@ export function TopBar() {
         </Link>
 
         <div className={styles.icon}>
+        {/* <div>
+            <Link href="/favorite" onClick={() => changeStatus()}>
+              <AiOutlineHeart size={30} />
+            </Link>
+          </div> */}
 
           <div className={styles.searchOption}>
             <input
@@ -83,15 +88,11 @@ export function TopBar() {
             />
 
             <button className={styles.search} onClick={openCloseSearch}>
-              <AiOutlineSearch size={25} />
+              <AiOutlineSearch size={30} />
             </button>
           </div>
 
-          <div>
-            <Link href="/favorite" onClick={() => changeStatus()}>
-              <AiOutlineHeart size={30} />
-            </Link>
-          </div>
+        
 
         </div>
       </div>

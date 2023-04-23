@@ -6,34 +6,34 @@
   width: 100%;
   padding: 0.1rem 1.5rem 0.1rem 0.5rem;
   z-index: 5;
-  background-color: white;
+  background-color: rgb(226, 10, 190);
 
-  .searchOption {
+  .searchOption {    
     display: flex;
-
     input {
       display: none;
       left: 0;
       top: 0;
       border: 0;
       padding: 0px 12px;
-      background-color: rgb(226, 10, 190);
+      background-color: rgb(255, 255, 255);
       border-radius: 50px 0 0 50px;
-      color: white;
+      color: rgb(96, 95, 95);
       font-size: 15px;
       text-transform: uppercase;
       &.active {
         display: flex;
-        width: 8rem;
+        width: 12rem;
       }
     }
 
     .search {
+      border: solid 1px rgb(255, 255, 255);
       position: relative;
       // right: 2.3rem;
       background-color: rgb(226, 10, 190);
       border-radius: 0 50px 50px 0;
-      border: 0;
+
 
       svg {
         margin: 0;
@@ -62,13 +62,13 @@
 }
 
 .icon {
-  display: flex;
+  text-align: end;
   a {
-    color: rgb(226, 10, 190);
-    margin-left: 5px;
+    color: rgb(255, 255, 255);
+   
   }
   svg {
-    margin-left: 5px;
+   margin-bottom: 5px;
   }
 }
 
@@ -82,35 +82,33 @@
 }
 
 .list {
-  padding: 20px;
+  background-color: rgb(240, 240, 240);
+  padding: 10px;
   display: grid;
-  gap: 20px;
+  gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 
   &__product {
-    display: flex;
-    position: relative;
-    -webkit-box-shadow: 0px 0px 6px 0px rgba(247, 8, 227, 0.46);
-    -moz-box-shadow: 0px 0px 6px 0px rgba(247, 8, 227, 0.46);
-    box-shadow: 0px 0px 6px 0px rgba(247, 8, 227, 0.46);
-    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+  
+    border-radius: 5px;
 
     img {
-      border-top-right-radius: 3px;
-      border-top-left-radius: 3px;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      height: 18rem;
       object-fit: cover;
       object-position: center center;
     }
 
     h5 {
       font-size: 18px;
-      padding: 10px;
+      padding: 10px 5px 5px 10px;
     }
 
     h6 {
-      font-size: 15px;
-      line-height: 2;
-      padding: 10px;
+      font-size: 15px;   
+      padding: 0px 5px 10px 10px;
     }
   }
 }

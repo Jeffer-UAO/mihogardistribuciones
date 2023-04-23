@@ -15,3 +15,4 @@ export * from "./Auth";
  export * from "./FooterApp";
  export * from "./NotFound";
  export * from "./PageNone";
+ export * from "./Separator";
