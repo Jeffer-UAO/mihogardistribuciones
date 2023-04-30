@@ -5,7 +5,7 @@ export class Products {
   
   async getProducts(){
     try {
-      const url = `${BASE_API}/api/products/`;      
+      const url = `${BASE_API}/api/products/?active=true`;      
 
       const response = await fetch(url);    
       const result = await response.json();    
